@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UCSD Parking Prototype // Leaving</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/static/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/stylesheets/style.css">
+  </head>
+  <body>
+    <a href="/" class="enlarge home-link">Home</a>
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-md-4 col-md-push-2">
+          <h1>Leaving&nbsp;<small><a href="/arriving">Departure</a></small></h1>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-md-push-2">
+        <form method="post" action="/leaving" id="leavingForm" class="leaving-form angle-border">
+          <label for="parking-lot">Parking lot </label>
+          <select class="form-control" type="text" name="parking-lot">
+
+            <option selected disabled>Choose a Parking Lot ...</option>
+            <option value="Hopkins">Hopkins Parking Structure</option>
+            <option value="Pangea">Pangea Parking Structure</option>
+            <option value="Gilman Parking Structure">Gilman Parking Structure</option>
+            <option value="Parking Lot P101">Parking Lot P101</option>
+            <option value="Parking Lot P102">Parking Lot P102</option>
+            <option value="Parking Lot P103">Parking Lot P103</option>
+            <option value="Parking Lot P105">Parking Lot P105</option>
+            <option value="Parking Lot P106">Parking Lot P106</option>
+            <option value="Parking Lot P107">Parking Lot P107</option>
+            <option value="Parking Lot P108">Parking Lot P108</option>
+            <option value="Parking Lot P110">Parking Lot P110</option>
+            <option value="Parking Lot P112">Parking Lot P112</option>
+            <option value="Parking Lot P113">Parking Lot P113</option>
+            <option value="Parking Lot P114">Parking Lot P114</option>
+            <option value="Parking Lot P116">Parking Lot P116</option>
+            <option value="Parking Lot P201">Parking Lot P201</option>
+            <option value="Parking Lot P202">Parking Lot P202</option>
+            <option value="Parking Lot P203">Parking Lot P203</option>
+            <option value="Parking Lot P204">Parking Lot P204</option>
+            <option value="Parking Lot P205">Parking Lot P205</option>
+            <option value="Parking Lot P206">Parking Lot P206</option>
+            <option value="Parking Lot P207">Parking Lot P207</option>
+            <option value="Parking Lot P208">Parking Lot P208</option>
+            <option value="Parking Lot P301">Parking Lot P301</option>
+            <option value="Parking Lot P302">Parking Lot P302</option>
+            <option value="Parking Lot P303">Parking Lot P303</option>
+            <option value="Parking Lot P304">Parking Lot P304</option>
+            <option value="Parking Lot P306">Parking Lot P306</option>
+            <option value="Parking Lot P308">Parking Lot P308</option>
+            <option value="Parking Lot P309">Parking Lot P309</option>
+            <option value="Parking Lot P310">Parking Lot P310</option>
+            <option value="Parking Lot P351">Parking Lot P351</option>
+            <option value="Parking Lot P352">Parking Lot P352</option>
+            <option value="Parking Lot P353">Parking Lot P353</option>
+            <option value="Parking Lot P354">Parking Lot P354</option>
+            <option value="Parking Lot P357">Parking Lot P357</option>
+            <option value="Parking Lot P358">Parking Lot P358</option>
+            <option value="Parking Lot P359">Parking Lot P359</option>
+            <option value="Torrey Pines Center South">Torrey Pines Center South</option>
+            <option value="Parking Lot P383">Parking Lot P383</option>
+            <option value="Parking Lot P384">Parking Lot P384</option>
+            <option value="Parking Lot P385">Parking Lot P385</option>
+            <option value="Parking Lot P386 (Gliderport)">Parking Lot P386 (Gliderport)</option>
+            <option value="Torrey Pines Center North">Torrey Pines Center North</option>
+            <option value="Parking Lot P395">Parking Lot P395</option>
+            <option value="Parking Lot P401">Parking Lot P401</option>
+            <option value="Parking Lot P402">Parking Lot P402</option>
+            <option value="Parking Lot P403">Parking Lot P403</option>
+            <option value="Parking Lot P404">Parking Lot P404</option>
+            <option value="Parking Lot P405">Parking Lot P405</option>
+            <option value="Parking Lot P406">Parking Lot P406</option>
+            <option value="Parking Lot P407">Parking Lot P407</option>
+            <option value="Parking Lot P408">Parking Lot P408</option>
+            <option value="Parking Lot P410">Parking Lot P410</option>
+            <option value="Parking Lot P411">Parking Lot P411</option>
+            <option value="Parking Lot P412">Parking Lot P412</option>
+            <option value="Parking Lot P413">Parking Lot P413</option>
+            <option value="Parking Lot P414">Parking Lot P414</option>
+            <option value="Parking Lot P415">Parking Lot P415</option>
+            <option value="Parking Lot P416">Parking Lot P416</option>
+            <option value="Parking Lot P418">Parking Lot P418</option>
+            <option value="Parking Lot P501">Parking Lot P501</option>
+            <option value="Parking Lot P502">Parking Lot P502</option>
+            <option value="Parking Lot P503">Parking Lot P503</option>
+            <option value="Parking Lot P504">Parking Lot P504</option>
+            <option value="Parking Lot P505">Parking Lot P505</option>
+            <option value="Parking Lot P506">Parking Lot P506</option>
+            <option value="Parking Lot P507">Parking Lot P507</option>
+            <option value="Parking Lot P508">Parking Lot P508</option>
+            <option value="Parking Lot P509">Parking Lot P509</option>
+            <option value="Parking Lot P510">Parking Lot P510</option>
+            <option value="Parking Lot P601">Parking Lot P601</option>
+            <option value="Parking Lot P602">Parking Lot P602</option>
+            <option value="Parking Lot P603">Parking Lot P603</option>
+            <option value="Parking Lot P604">Parking Lot P604</option>
+            <option value="Parking Lot P605">Parking Lot P605</option>
+            <option value="Parking Lot P606">Parking Lot P606</option>
+            <option value="Parking Lot P607">Parking Lot P607</option>
+            <option value="Parking Lot P608">Parking Lot P608</option>
+            <option value="Parking Lot P609">Parking Lot P609</option>
+            <option value="Parking Lot P701">Parking Lot P701</option>
+            <option value="Parking Lot P702">Parking Lot P702</option>
+            <option value="Parking Lot P703">Parking Lot P703</option>
+            <option value="Parking Lot P704">Parking Lot P704</option>
+            <option value="Parking Lot P705">Parking Lot P705</option>
+            <option value="Parking Lot P721 (East Campus East Lower Level)">Parking Lot P721 (East Campus East Lower Level)</option>
+            <option value="Parking Lot P722 (East Campus East Upper Level)">Parking Lot P722 (East Campus East Upper Level)</option>
+            <option value="Parking Lot P731 (East Campus West Lower Level)">Parking Lot P731 (East Campus West Lower Level)</option>
+            <option value="Parking Lot P732 (East Campus West Second Level)">Parking Lot P732 (East Campus West Second Level)</option>
+            <option value="Parking Lot P733 (East Campus West Third Level)">Parking Lot P733 (East Campus West Third Level)</option>
+            <option value="Parking Lot P734 (East Campus West Fourth Level)">Parking Lot P734 (East Campus West Fourth Level)</option>
+            <option value="Parking Lot P735 (East Campus West Upper Level)">Parking Lot P735 (East Campus West Upper Level)</option>
+            <option value="Parking Lot P751">Parking Lot P751</option>
+            <option value="Parking Lot P752">Parking Lot P752</option>
+            <option value="Parking Lot P754">Parking Lot P754</option>
+            <option value="Parking Lot P757">Parking Lot P757</option>
+            <option value="Parking Lot P758">Parking Lot P758</option>
+            <option value="Parking Lot P759">Parking Lot P759</option>
+            <option value="Parking Lot P760">Parking Lot P760</option>
+            <option value="Parking Lot P761">Parking Lot P761</option>
+            <option value="Parking Lot P782">Parking Lot P782</option>
+            <option value="Parking Lot P783">Parking Lot P783</option>
+            <option value="Parking Lot P784">Parking Lot P784</option>
+            <option value="Parking Structure: East Campus 1 East">Parking Structure: East Campus 1 East</option>
+            <option value="Parking Structure: East Campus 1 West">Parking Structure: East Campus 1 West</option>
+            <option value="Torrey Pines Center">Torrey Pines Center</option>
+          </select>
+          <br/><br/>
+
+          <label for="floor">Floor </label>
+          <select class="form-control" type="text" name="floor">
+            <option selected disabled>Choose a floor ...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select>
+          <br/><br/>
+
+          <label for="location">Location </label>
+          <select class="form-control" type="text" name="location">
+            <option selected disabled>Choose a location ...</option>
+            <option value="north">North</option>
+            <option value="north-east">North East</option>
+            <option value="east">East</option>
+            <option value="south-east">South East</option>
+            <option value="south">South</option>
+            <option value="south-west">South West</option>
+            <option value="west">West</option>
+            <option value="north-west">North West</option>
+          </select>
+          <br><br>
+
+          <label for="Spot-type">Spot Type</label>
+          <select class="form-control" type="text" name="spot-type">
+            <option selected disabled>Choose spot type...</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="S">S</option>
+            <option value="V">V</option></option>
+            <option value="VP">VP</option>
+          </select>
+          <br/><br/>
+
+          <label for="time">Estimated minutes till departure </label>
+          <input class="form-control" type="text" name="time" placeholder="in minutes" required="required"><br>
+          <br/><br/>
+
+          <label for="details">Details</label>
+          <textarea class="form-control" name="details" rows="3"></textarea>
+          <br/><br/>
+
+          <button class="btn btn-lg btn-primary" type="submit"/>Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

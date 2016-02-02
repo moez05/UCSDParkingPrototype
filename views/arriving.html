@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UCSD Parking Prototype // Arriving</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/static/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/stylesheets/style.css">
+  </head>
+  <body>
+    <a href="/" class="enlarge home-link">Home</a>
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-md-4 col-md-push-2">
+          <h1>Departures&nbsp;<small><a href="/leaving">Leaving?</a></small></h1>
+          <h2>Spots opening soon</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-7 col-md-push-2">
+        {% if user_dicts | count() == 0 %}
+          <p><span class="enlarge">Sorry, no parking spot data available.</span></p>
+        {% endif %}
+        {% for u in user_dicts %}
+          <div class="row post-entry angle-border enlarge">
+            <div class="col-md-5">
+              <p>Where <span class="enlarge">{{ u['parking_lot'] }}</span></p>
+              <p>When <span class="enlarge">{{ u['time_till_departure'] }}</span></p>
+            </div>
+            <div class="col-md-7">
+              <p>Location <span class="enlarge">{{ u['location'] }}</span></p>
+              <p>Parking type <span class="enlarge">{{ u['spot_type'] }}</span></p>
+            </div>
+            <div class="col-md-12">
+              <br/>
+              <p>{{ u['details'] }}</p>
+            </div>
+          </div>
+          <br/>
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>

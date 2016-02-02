@@ -1,0 +1,50 @@
+body {
+    background-color: #FDFFFC;
+    border-top: 1rem solid #DB5461;
+}
+
+small {
+    font-size: 55% !important;
+}
+
+.home-link {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.home-nav-row {
+    /*margin: 5rem;*/
+}
+
+.home-big-nav-btn {
+    padding: 4rem;
+    font-size: 5rem;
+    font-family: "Helvetica";
+}
+
+.angle-border {
+    border-left: 1rem solid #DB5461;
+    border-bottom: 1rem solid #DB5461;
+}
+
+.leaving-form {
+    padding: 3rem;
+}
+
+.post-entry {
+    background-color: transparent;
+    margin-bottom: 5rem;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.enlarge {
+    font-size: 160%;
+}
